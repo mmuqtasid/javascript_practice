@@ -1,13 +1,21 @@
-//Generate Sequence  (1 , 2,3 , 5 , 7 , 11  ..............) with range (1-100);
+// //Generate Sequence of prime number  (1 , 2,3 , 5 , 7 , 11  ..............100) with range (1-100);
 
-function  generateSequence(start, end){
-    let sequence = [];
-     for(let i= start; i <=end ;i++){
-         if(i%2!==0){
-             sequence.push(i);
-         }
-     }
-      return sequence;
+function  generatePrimeNumber(start, end){
+    let arr = [];
+    for(let i= start; i <=100 ;i++){
+        if(isPrime(i)){
+            arr.push(i);
+        }
+    }
+     return arr;
 }
-console.log(generateSequence(1,100));
 
+function isPrime(num){
+    for(let i=2; i< num/2 +1; i++ ){
+        if(num % i == 0){
+           return false;  
+        }
+    }
+    return true;
+}
+console.log(generatePrimeNumber(1,100));

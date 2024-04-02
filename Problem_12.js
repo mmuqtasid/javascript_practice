@@ -1,4 +1,4 @@
-//Write a Program to check  whether the given number is prime or not.
+//Write a Program to check  whether the given number (1 TO 100) prime or not.
 
 function  CheckPrime(num) {
     if (num <= 1) return false;
@@ -7,4 +7,5 @@ function  CheckPrime(num) {
     }
     return true;
 }
-console.log(CheckPrime(7));
+console.log(CheckPrime(29));
+
